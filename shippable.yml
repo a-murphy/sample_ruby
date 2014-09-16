@@ -15,6 +15,3 @@ rvm:
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
-branches:
-  only:
-    - master
