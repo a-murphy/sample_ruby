@@ -1,16 +1,8 @@
 language: ruby
 rvm:
-  - 1.8.7
-  - 1.9.2
-  - 1.9.3
-  - 2.0.0-p353
-  - 2.1.0
-  - 2.1.1
+  - ruby_head
 
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 notifications:
-     email:
-         recipients:
-             - exampleone@org.com
-             - exampletwo@org.com
+     email: false
