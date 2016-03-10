@@ -4,5 +4,18 @@ rvm:
 
 env:
  - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
- 
-build_image: amurphy/test2:latest
+
+build:
+    pre_ci_boot:
+        image_name: amurphy/test2
+        image_tag: latest
+        pull: true
+        options:
+    ci:
+      - echo "True"
+
+integrations:
+    hub:
+        - integrationName: "Docker Hub"
+          type: docker
+          agent_only: true
