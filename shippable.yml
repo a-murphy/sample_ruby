@@ -1,9 +1,8 @@
 language: ruby
 rvm:
- - 2.1.1
- - 2.1.2
- - ruby-head
  - jruby-head
 
 env:
  - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
+ 
+build_image: amurphy/test2:latest
