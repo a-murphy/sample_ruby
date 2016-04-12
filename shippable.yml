@@ -1,7 +1,10 @@
 language: ruby
 rvm:
- - 2.1.1
- - 2.1.2
+  - 2.3.0
+services:
+  - postgres
 
-env:
- - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
+build:
+  ci:
+    - sudo apt-get -y update
+    - bundle exec rake test
