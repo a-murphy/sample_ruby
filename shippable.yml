@@ -11,3 +11,6 @@ build:
   ci:
     - bundle install
     - bundle exec rake
+    - echo $TEST
+    - echo $TESTTWO
+    - echo $TESTTHREE
