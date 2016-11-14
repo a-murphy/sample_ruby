@@ -3,7 +3,7 @@ rvm:
  - 2.2.2
  
 env:
- - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage TESTTWO=test2
+ - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage TEST=test1
 
 build:
   pre_ci:
