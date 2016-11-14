@@ -8,7 +8,7 @@ describe Bowling, "#score" do
     bowling.score.should eq(0)
   end
   it "returns test2" do
-    env = getenv(TESTTWO);
+    env = getenv("TESTTWO");
     env.should eq("test2")
   end
 end
