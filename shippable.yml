@@ -1,21 +1,12 @@
 language: ruby
 rvm:
- - 2.1.2
+ - 2.2.2
  
 env:
  - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
 build:
   pre_ci:
-    - docker rmi 821085cb268b || true
-    - docker rmi 5c2d4d2d3e3e || true
-    - docker rmi e89d08a569d8 || true
-    - docker rmi 7486023431b5 || true
-    - docker rmi 3d73e768dbdc || true
-    - docker rmi c33bca782098 || true
-    - docker rmi c0ba2198beff || true
-    - docker rmi 5c98ddcf5f07 || true
-    - docker rmi c96e24bb4497 || true
     - docker images
   ci:
     - bundle install
