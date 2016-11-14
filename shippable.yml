@@ -8,5 +8,7 @@ env:
  - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
 build:
+  pre_ci:
+    - docker images
   ci:
     - bundle exec rake
