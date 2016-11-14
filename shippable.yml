@@ -7,10 +7,6 @@ env:
 
 build:
   pre_ci:
-    - docker rmi ec324e7b6461 || true
-    - docker rmi 0f8c161d3a6b || true
-    - docker rmi 74a07bb353f9 || true
-    - docker rmi f33466008eaf || true
     - docker rmi 821085cb268b || true
     - docker rmi 5c2d4d2d3e3e || true
     - docker rmi e89d08a569d8 || true
@@ -22,4 +18,5 @@ build:
     - docker rmi c96e24bb4497 || true
     - docker images
   ci:
+    - bundle install
     - bundle exec rake
