@@ -1,7 +1,5 @@
 language: ruby
 rvm:
- - 2.1.0
- - 2.1.1
  - 2.1.2
  
 env:
@@ -9,6 +7,7 @@ env:
 
 build:
   pre_ci:
+    - docker rmi 821085cb268b 5c2d4d2d3e3e e89d08a569d8 7486023431b5 3d73e768dbdc c33bca782098 c0ba2198beff 5c98ddcf5f07 c96e24bb4497 
     - docker images
   ci:
     - bundle exec rake
