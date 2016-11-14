@@ -9,6 +9,6 @@ describe Bowling, "#score" do
   end
   it "returns test2" do
     env = ENV.fetch("TESTTWO");
-    env.should eq("test2")
+    env.should eq("test")
   end
 end
